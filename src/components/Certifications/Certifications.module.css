@@ -42,10 +42,27 @@
   transform: translateY(-2px);
 }
 
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background-color: var(--color-background);
+  padding: 4px;
+}
+
 .certName {
   font-size: var(--font-size-lg);
   color: var(--color-primary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
 }
 
 .issuer {

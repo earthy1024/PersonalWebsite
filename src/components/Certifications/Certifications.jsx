@@ -8,8 +8,19 @@ function Certifications({ certifications }) {
       <div className={styles.grid}>
         {(certifications || []).map((cert) => (
           <div key={cert?.name} className={styles.card}>
-            <h3 className={styles.certName}>{cert?.name}</h3>
-            <p className={styles.issuer}>{cert?.issuer}</p>
+            <div className={styles.cardHeader}>
+              {cert?.logo && (
+                <img
+                  src={cert.logo}
+                  alt={`${cert.issuer} logo`}
+                  className={styles.logo}
+                />
+              )}
+              <div>
+                <h3 className={styles.certName}>{cert?.name}</h3>
+                <p className={styles.issuer}>{cert?.issuer}</p>
+              </div>
+            </div>
             <p className={styles.date}>{cert?.date}</p>
             {cert?.credlyUrl && (
               <a

@@ -15,8 +15,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
       "endDate": "Present",
       "accomplishments": [
-        "Led agentic tokenization orchestration efforts for Amazon Pay, improving payment method acceptance for Amazon Agentic AI products for off-Amazon experiences including Buy For Me and Alexa+.",
-        "Designed and owned key features of the external transaction management system that provides internal risk and fraud detection layers better visibility into off-Amazon agentic transactions."
+        "As a Software Engineer 2 on Amazon Pay, I lead the agentic tokenization orchestration efforts that power payment method acceptance for Amazon's AI-driven products in off-Amazon experiences, including Buy For Me and Alexa+. I also designed and own key features of the external transaction management system, which gives internal risk and fraud detection layers deeper visibility into how agentic transactions behave outside of Amazon's ecosystem. My work sits at the intersection of payment security and emerging agentic AI, ensuring that as these products scale, the underlying payment infrastructure remains secure, observable, and reliable."
       ]
     },
     {
@@ -28,10 +27,7 @@
       "startDate": "December 2023",
       "endDate": "November 2025",
       "accomplishments": [
-        "Led a team of 8 engineers to simplify the Amazon Pay integration experience through designing and implementing a network token life-cycle management system which allows for payment service providers to integrate with Amazon Pay with minimal effort.",
-        "Owned technical communication with card networks (Visa, Mastercard, Discover) to implement and align on an integration pattern for Amazon Pay to use on their tokenization platforms (e.g. VTS, MDES).",
-        "Increased merchant adoption rate by migrating PSD2 MFA handling from legacy architecture to support new Amazon Pay product launches.",
-        "Designed a discrepancy handling system for transaction invoices sent from payment service providers (e.g. Stripe) for settlements to notify internal stakeholders of invoicing issues."
+        "I led a team of 8 engineers to design and implement a network token life-cycle management system that fundamentally simplified how payment service providers integrate with Amazon Pay. This involved owning the technical communication with major card networks (Visa, Mastercard, and Discover) to align on integration patterns for their tokenization platforms like VTS and MDES. Beyond tokenization, I drove merchant adoption by migrating PSD2 multi-factor authentication handling from legacy architecture to support new product launches, and designed a discrepancy handling system that automatically detects and surfaces invoicing issues from providers like Stripe to internal settlement stakeholders."
       ]
     },
     {
@@ -43,8 +39,7 @@
       "startDate": "August 2023",
       "endDate": "December 2023",
       "accomplishments": [
-        "Improved the in-development digital radar system by creating custom internal libraries for networking protocols such as Telnet and Data Distribution Service in C++.",
-        "Redesigned the radar metric ingestion system by developing an internal high-throughput HDF5 C++ library."
+        "At GTRI's Sensors and Electromagnetic Applications Lab, I worked on an in-development digital radar system where I built custom internal C++ libraries for networking protocols including Telnet and Data Distribution Service (DDS), enabling reliable real-time communication between radar subsystems. I also redesigned the radar metric ingestion pipeline by developing a high-throughput HDF5 library in C++ that significantly improved how the system captured and stored large volumes of sensor data for downstream analysis."
       ]
     }
   ],
@@ -61,7 +56,8 @@
         "institution": "University of Illinois at Urbana-Champaign",
         "degree": "B.S. Statistics and Computer Science",
         "minor": "Macroeconomics",
-        "graduationDate": "May 2023"
+        "graduationDate": "May 2023",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9c/University_of_Illinois_at_Urbana%E2%80%93Champaign_logo.svg"
       }
     ],
     "certifications": [
@@ -69,7 +65,8 @@
         "name": "AWS Certified Developer - Associate",
         "issuer": "Amazon Web Services",
         "date": "March 2026",
-        "credlyUrl": "https://www.credly.com/badges/31e6b14a-98d9-4bce-9166-41cada9e3a63"
+        "credlyUrl": "https://www.credly.com/badges/31e6b14a-98d9-4bce-9166-41cada9e3a63",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
       }
     ]
   },

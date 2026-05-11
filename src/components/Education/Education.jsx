@@ -8,12 +8,23 @@ function Education({ degrees }) {
       <div className={styles.grid}>
         {(degrees || []).map((degree) => (
           <div key={degree?.institution} className={styles.card}>
-            <h3 className={styles.institution}>{degree?.institution}</h3>
+            <div className={styles.cardHeader}>
+              {degree?.logo && (
+                <img
+                  src={degree.logo}
+                  alt={`${degree.institution} logo`}
+                  className={styles.logo}
+                />
+              )}
+              <div>
+                <h3 className={styles.institution}>{degree?.institution}</h3>
+                <p className={styles.date}>{degree?.graduationDate}</p>
+              </div>
+            </div>
             <p className={styles.degree}>{degree?.degree}</p>
             {degree?.minor && (
               <p className={styles.minor}>Minor: {degree.minor}</p>
             )}
-            <p className={styles.date}>{degree?.graduationDate}</p>
           </div>
         ))}
       </div>
