@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Contact Component Styles - Centered Layout
+   ========================================================================== */
+
+.contact {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Content Layout
+   -------------------------------------------------------------------------- */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+/* --------------------------------------------------------------------------
+   Contact Item
+   -------------------------------------------------------------------------- */
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-md);
+}
+
+.label {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.value {
+  color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   Email Link
+   -------------------------------------------------------------------------- */
+
+.emailLink {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.emailLink:hover {
+  color: var(--color-accent-hover);
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Styles (< 768px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .contact {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .heading {
+    font-size: var(--font-size-xl);
+  }
+
+  .item {
+    font-size: var(--font-size-base);
+  }
+}

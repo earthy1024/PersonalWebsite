@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Skills Component Styles - Card Grid Layout
+   ========================================================================== */
+
+.skills {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Grid Layout - auto-fit with minmax for flexible columns
+   -------------------------------------------------------------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* --------------------------------------------------------------------------
+   Category Card
+   -------------------------------------------------------------------------- */
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+}
+
+.categoryName {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+/* --------------------------------------------------------------------------
+   Skill List
+   -------------------------------------------------------------------------- */
+
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.skillItem {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Styles (< 768px) - Single column stack
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .skills {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .heading {
+    font-size: var(--font-size-xl);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

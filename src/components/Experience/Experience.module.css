@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Experience Component Styles - Timeline Layout
+   ========================================================================== */
+
+.experience {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Timeline Container
+   -------------------------------------------------------------------------- */
+
+.timeline {
+  position: relative;
+  padding-left: var(--space-2xl);
+}
+
+/* Vertical timeline line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-border);
+}
+
+/* --------------------------------------------------------------------------
+   Role Entry
+   -------------------------------------------------------------------------- */
+
+.role {
+  position: relative;
+  margin-bottom: var(--space-2xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.role:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Timeline dot/marker */
+.role::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-2xl) + 3px);
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-background);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Same-company marker distinction */
+.sameCompany::before {
+  background-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent), 0 0 0 5px rgba(15, 113, 115, 0.15);
+}
+
+.differentCompany::before {
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Role Content
+   -------------------------------------------------------------------------- */
+
+.company {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.department {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.title {
+  font-size: var(--font-size-md);
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.dateRange {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+/* --------------------------------------------------------------------------
+   Accomplishments
+   -------------------------------------------------------------------------- */
+
+.accomplishments {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accomplishments li {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: var(--line-height-base);
+}
+
+.accomplishments li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.accomplishments li:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Styles (< 768px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .experience {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .heading {
+    font-size: var(--font-size-xl);
+  }
+
+  .timeline {
+    padding-left: var(--space-xl);
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .role::before {
+    left: calc(-1 * var(--space-xl) + 2px);
+    width: 10px;
+    height: 10px;
+  }
+
+  .company {
+    font-size: var(--font-size-md);
+  }
+
+  .title {
+    font-size: var(--font-size-base);
+  }
+}

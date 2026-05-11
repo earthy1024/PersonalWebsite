@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Hero Component Styles
+   ========================================================================== */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4xl) var(--space-lg);
+  min-height: 60vh;
+}
+
+.content {
+  max-width: var(--max-width);
+  width: 100%;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+
+.name {
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  color: var(--color-accent);
+  font-weight: 500;
+  margin-bottom: var(--space-xl);
+}
+
+.summary {
+  font-size: var(--font-size-md);
+  color: var(--color-text-light);
+  line-height: var(--line-height-base);
+  max-width: 640px;
+  margin: 0 auto var(--space-2xl);
+}
+
+/* --------------------------------------------------------------------------
+   Social Links
+   -------------------------------------------------------------------------- */
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialItem {
+  margin: 0;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-fast), border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+.socialLink:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background-color: var(--color-surface);
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Styles (< 768px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .hero {
+    padding: var(--space-3xl) var(--space-lg);
+    min-height: auto;
+  }
+
+  .name {
+    font-size: var(--font-size-2xl);
+  }
+
+  .title {
+    font-size: var(--font-size-lg);
+  }
+
+  .summary {
+    font-size: var(--font-size-base);
+  }
+
+  .socialLinks {
+    flex-wrap: wrap;
+  }
+}
