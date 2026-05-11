@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Certifications Component Styles
+   ========================================================================== */
+
+.certifications {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Grid Layout
+   -------------------------------------------------------------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* --------------------------------------------------------------------------
+   Card
+   -------------------------------------------------------------------------- */
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.certName {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.issuer {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.date {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+.badge {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.badge:hover {
+  color: var(--color-accent-hover);
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Styles (< 768px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .certifications {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .heading {
+    font-size: var(--font-size-xl);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

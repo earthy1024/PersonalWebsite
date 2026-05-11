@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import Experience from './components/Experience/Experience';
 import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
+import Certifications from './components/Certifications/Certifications';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import styles from './App.module.css';
@@ -13,6 +14,7 @@ const sections = [
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
   { id: 'education', label: 'Education' },
+  { id: 'certifications', label: 'Certifications' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -40,6 +42,10 @@ function App() {
         <section id="education">
           <Education
             degrees={profileData.education.degrees}
+          />
+        </section>
+        <section id="certifications">
+          <Certifications
             certifications={profileData.education.certifications}
           />
         </section>

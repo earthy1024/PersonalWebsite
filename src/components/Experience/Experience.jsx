@@ -24,11 +24,11 @@ function Experience({ roles }) {
               <p className={styles.dateRange}>
                 {role?.startDate} – {role?.endDate}
               </p>
-              <ul className={styles.accomplishments}>
+              <div className={styles.description}>
                 {(role?.accomplishments || []).map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <p key={i} className={styles.paragraph}>{item}</p>
                 ))}
-              </ul>
+              </div>
             </article>
           );
         })}

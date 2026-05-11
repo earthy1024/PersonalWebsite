@@ -108,33 +108,21 @@
 }
 
 /* --------------------------------------------------------------------------
-   Accomplishments
+   Description Paragraphs
    -------------------------------------------------------------------------- */
 
-.accomplishments {
-  list-style: none;
-  padding: 0;
+.description {
   margin: 0;
 }
 
-.accomplishments li {
-  position: relative;
-  padding-left: var(--space-lg);
-  margin-bottom: var(--space-sm);
+.paragraph {
   font-size: var(--font-size-base);
   color: var(--color-text);
   line-height: var(--line-height-base);
+  margin-bottom: var(--space-md);
 }
 
-.accomplishments li::before {
-  content: '▸';
-  position: absolute;
-  left: 0;
-  color: var(--color-accent);
-  font-weight: 700;
-}
-
-.accomplishments li:last-child {
+.paragraph:last-child {
   margin-bottom: 0;
 }
 

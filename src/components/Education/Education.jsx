@@ -1,6 +1,6 @@
 import styles from './Education.module.css';
 
-function Education({ degrees, certifications }) {
+function Education({ degrees }) {
   return (
     <section id="education" className={styles.education}>
       <h2 className={styles.heading}>Education</h2>
@@ -14,24 +14,6 @@ function Education({ degrees, certifications }) {
               <p className={styles.minor}>Minor: {degree.minor}</p>
             )}
             <p className={styles.date}>{degree?.graduationDate}</p>
-          </div>
-        ))}
-
-        {(certifications || []).map((cert) => (
-          <div key={cert?.name} className={styles.card}>
-            <h3 className={styles.certName}>{cert?.name}</h3>
-            <p className={styles.issuer}>{cert?.issuer}</p>
-            <p className={styles.date}>{cert?.date}</p>
-            {cert?.credlyUrl && (
-              <a
-                href={cert.credlyUrl}
-                className={styles.badge}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Badge
-              </a>
-            )}
           </div>
         ))}
       </div>
