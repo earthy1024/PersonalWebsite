@@ -1,0 +1,79 @@
+{
+  "name": "Prithvi Dharmaraj",
+  "title": "Software Engineer",
+  "summary": "Software Engineer with 2+ years building payment infrastructure at Amazon Pay, specializing in tokenization, card network integrations, and agentic payment systems. Experienced in designing high availability transaction systems with a focus on security and developer experience.",
+  "socialLinks": [
+    { "platform": "GitHub", "url": "https://github.com/earthy1024", "icon": "github" },
+    { "platform": "LinkedIn", "url": "https://linkedin.com/in/prithvi-dharmaraj", "icon": "linkedin" }
+  ],
+  "experience": [
+    {
+      "id": "amazon-sde2",
+      "company": "Amazon",
+      "department": "Amazon Pay",
+      "title": "Software Engineer 2",
+      "startDate": "December 2025",
+      "endDate": "Present",
+      "accomplishments": [
+        "Led agentic tokenization orchestration efforts for Amazon Pay, improving payment method acceptance for Amazon Agentic AI products for off-Amazon experiences including Buy For Me and Alexa+.",
+        "Designed and owned key features of the external transaction management system that provides internal risk and fraud detection layers better visibility into off-Amazon agentic transactions."
+      ]
+    },
+    {
+      "id": "amazon-sde1",
+      "company": "Amazon",
+      "department": "Amazon Pay",
+      "title": "Software Engineer 1",
+      "startDate": "December 2023",
+      "endDate": "November 2025",
+      "accomplishments": [
+        "Led a team of 8 engineers to simplify the Amazon Pay integration experience through designing and implementing a network token life-cycle management system which allows for payment service providers to integrate with Amazon Pay with minimal effort.",
+        "Owned technical communication with card networks (Visa, Mastercard, Discover) to implement and align on an integration pattern for Amazon Pay to use on their tokenization platforms (e.g. VTS, MDES).",
+        "Increased merchant adoption rate by migrating PSD2 MFA handling from legacy architecture to support new Amazon Pay product launches.",
+        "Designed a discrepancy handling system for transaction invoices sent from payment service providers (e.g. Stripe) for settlements to notify internal stakeholders of invoicing issues."
+      ]
+    },
+    {
+      "id": "gtri",
+      "company": "Georgia Tech Research Institute",
+      "department": "Sensors and Electromagnetic Applications Lab",
+      "title": "Research Engineer",
+      "startDate": "August 2023",
+      "endDate": "December 2023",
+      "accomplishments": [
+        "Improved the in-development digital radar system by creating custom internal libraries for networking protocols such as Telnet and Data Distribution Service in C++.",
+        "Redesigned the radar metric ingestion system by developing an internal high-throughput HDF5 C++ library."
+      ]
+    }
+  ],
+  "skills": [
+    { "name": "Languages", "skills": ["Java", "Kotlin", "Ruby", "C", "C++", "Python", "R", "TypeScript", "SQL"] },
+    { "name": "Cloud/AWS", "skills": ["DynamoDB", "ECS", "Lambda", "API Gateway", "SQS", "SNS", "S3"] },
+    { "name": "Frameworks & Libraries", "skills": ["AWS CDK", "Ruby on Rails", "Flask", "MCP"] },
+    { "name": "Domain Experience", "skills": ["Tokenization", "Payment Security", "Ecommerce Payments"] },
+    { "name": "Protocols & Standards", "skills": ["MTLS", "OAuth2", "3DS2", "PCI-DSS"] }
+  ],
+  "education": {
+    "degrees": [
+      {
+        "institution": "University of Illinois at Urbana-Champaign",
+        "degree": "B.S. Statistics and Computer Science",
+        "minor": "Macroeconomics",
+        "graduationDate": "May 2023"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Certified Developer - Associate",
+        "issuer": "Amazon Web Services",
+        "date": "March 2026",
+        "credlyUrl": "https://www.credly.com/badges/31e6b14a-98d9-4bce-9166-41cada9e3a63"
+      }
+    ]
+  },
+  "contact": {
+    "email": "prithvidraj@gmail.com",
+    "phone": "+1 770-356-7691",
+    "location": "Seattle, Washington"
+  }
+}
