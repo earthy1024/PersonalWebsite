@@ -16,10 +16,21 @@ function Experience({ roles }) {
               key={role?.id || index}
               className={`${styles.role} ${isSameCompany ? styles.sameCompany : styles.differentCompany}`}
             >
-              <h3 className={styles.company}>{role?.company}</h3>
-              {role?.department && (
-                <p className={styles.department}>{role.department}</p>
-              )}
+              <div className={styles.companyHeader}>
+                {role?.logo && (
+                  <img
+                    src={role.logo}
+                    alt={`${role.company} logo`}
+                    className={styles.logo}
+                  />
+                )}
+                <div>
+                  <h3 className={styles.company}>{role?.company}</h3>
+                  {role?.department && (
+                    <p className={styles.department}>{role.department}</p>
+                  )}
+                </div>
+              </div>
               <p className={styles.title}>{role?.title}</p>
               <p className={styles.dateRange}>
                 {role?.startDate} – {role?.endDate}

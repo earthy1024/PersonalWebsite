@@ -12,7 +12,7 @@
       "company": "Amazon",
       "department": "Amazon Pay",
       "title": "Software Engineer 2",
-      "startDate": "December 2025",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
       "endDate": "Present",
       "accomplishments": [
         "Led agentic tokenization orchestration efforts for Amazon Pay, improving payment method acceptance for Amazon Agentic AI products for off-Amazon experiences including Buy For Me and Alexa+.",
@@ -24,6 +24,7 @@
       "company": "Amazon",
       "department": "Amazon Pay",
       "title": "Software Engineer 1",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
       "startDate": "December 2023",
       "endDate": "November 2025",
       "accomplishments": [
@@ -38,6 +39,7 @@
       "company": "Georgia Tech Research Institute",
       "department": "Sensors and Electromagnetic Applications Lab",
       "title": "Research Engineer",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg",
       "startDate": "August 2023",
       "endDate": "December 2023",
       "accomplishments": [

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+  <!-- Georgia Tech gold/navy theme -->
+  <!-- Stylized "GT" letters -->
+  <rect x="10" y="10" width="80" height="80" rx="8" fill="#003057"/>
+  <text x="50" y="62" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#B3A369" text-anchor="middle">GTRI</text>
+</svg>

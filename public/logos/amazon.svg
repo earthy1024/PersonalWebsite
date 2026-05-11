@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+  <!-- Amazon-style logo: lowercase "a" with smile arrow underneath -->
+  <!-- The "a" letter -->
+  <text x="50" y="52" font-family="Arial, sans-serif" font-size="44" font-weight="bold" fill="#232F3E" text-anchor="middle" dominant-baseline="middle">a</text>
+  <!-- Smile curve from left to right -->
+  <path d="M20 68 Q50 82 75 68" stroke="#FF9900" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Arrow tip pointing right -->
+  <polygon points="73,62 80,68 73,74" fill="#FF9900"/>
+</svg>
